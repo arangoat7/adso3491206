@@ -9,9 +9,61 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100dvh;
+    nav.back {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        a:link, a:visited {
+            background-color: fff3;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: flex;
+            padding: 0.4rem;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            color : white;
+            transform: scale(0.8);
+            transition: all 0.4s ease-out;
+            &:hover {
+                transform: scale(1);
+            }
+        }
+    }
+    &.html {
+        background: linear-gradient(45deg, black, #e44d26);
+        main {
+            menu.mainmenu { 
+             a:link, a:visited { 
+                 span { 
+                        background-color: white;
+                        height: 50px;
+                        width: 50px;
+                    }
+                    aside {
+                        h4 {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     main {
-        header.mainmenu {
+        background:linear-gradient(#0006, #0000);
+        border-radius: 0.4rem;
+        padding: 1rem;
+            header.mainmenu {
+                &.internal {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                    img { 
+                        height: 120px;
+                        width: 120px;   
+                }
+                }
             h1 {
                 font-size: 3.6rem;
                 border-bottom: 2px solid white;
@@ -102,6 +154,14 @@ body {
                     }
                 }
             }
+        }
+        section {
+            background-color: #0009;
+            border-radius: 0.4rem;
+            margin-top: 2rem;
+            padding: 0.8rem;
+            min-height: 200px;
+            width: 380px;
         }
     }
 }
