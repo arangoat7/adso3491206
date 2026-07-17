@@ -1,10 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
 body {
-    background :linear-gradient(45deg, #1F3E7C,#294023);
+    background: linear-gradient(45deg, #1F3E7C, #294023);
     color: #fffc;
     font-family: Poppins;
     font-weight: 400;
@@ -12,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100dvh;
+
     main {
         header.mainmenu {
             h1 {
@@ -21,28 +19,32 @@ body {
                 text-align: center;
                 margin: 1rem 0;
             }
+
             img {
                 height: 280px;
                 width: 280px;
-                display:flex;
+                display: flex;
                 border: 4px solid white;
                 object-fit: cover;
                 margin: 1rem auto;
                 border-radius: 50%;
             }
+
             h2 {
-                font-size:  1.2rem;
+                font-size: 1.2rem;
                 text-align: center;
                 font-weight: 500;
                 text-transform: uppercase;
                 margin: 0;
             }
+
             h3 {
                 font-size: 1rem;
                 font-weight: 300;
                 text-align: center;
                 margin: 0;
             }
+
             h4, h5 {
                 font-size: 0.8rem;
                 font-weight: 200;
@@ -50,6 +52,7 @@ body {
                 margin: 0;
             }
         }
+
         menu.mainmenu {
             display: flex;
             flex-direction: column;
@@ -57,9 +60,10 @@ body {
             justify-content: center;
             align-items: center;
             margin: 1rem 0;
+
             a:link, a:visited {
                 color: black;
-                border-radius:5rem;
+                border-radius: 5rem;
                 background-color: #9d8065;
                 width: 320px;
                 display: flex;
@@ -67,31 +71,36 @@ body {
                 align-items: center;
                 text-decoration: none;
                 transition: all 0.4s ease-in;
+
                 span {
                     background-color: #d2c4ae;
                     border-radius: 50%;
                     display: flex;
                     font-size: 1.4rem;
-                    margin-left: 0 rem;
+                    margin-left: 0rem;
                     justify-content: center;
                     align-items: center;
                     width: 60px;
-                    height: 60px;      
+                    height: 60px;
                 }
+
                 aside {
-                    color : black;
+                    color: black;
                     margin-left: 0.6rem;
-                    h4{ 
+
+                    h4 {
                         margin: 0;
                         font-size: 1.2rem;
                         font-weight: 400;
                         padding: 0.6rem;
                         align-items: right;
                     }
+
                     small {
                         font-size: 0.7rem;
                         font-weight: 300;
                     }
+                }
             }
         }
     }
