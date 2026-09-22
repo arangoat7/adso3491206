@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge sprite</title>
+    <style>
+        body {
+            margin: 0;
+            border: 10px solid #fff;
+            background-color: #00b058;
+            min-height: 100dvh;
+            font-family: sans-serif;
+            main {
+                header {
+                    figure.logo {
+                        background: url(imgs/spriteweb.png) no-repeat;
+                        background-position: -25px -420px;
+                        height: 140px;
+                        margin: 2rem auto;
+                        width: 160px;
+                    }
+                }
+            }
+            div.menu {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+            a.boton {
+                display: inline-block;
+                text-decoration: none;
+                background-color: #1a4f38;
+                color: #fff;
+                padding: 12px 25px;
+                border-bottom: 8px solid #fff;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: #0d1f17;
+                    color: #fff;
+                    border-bottom-color: #ffeb3b;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <figure class="logo"></figure>
+            <div class="menu">
+                <a href="#" class="boton">INICIO</a>
+                <a href="#" class="boton">NOSOTROS</a>
+                <a href="#" class="boton">PORTAFOLIO</a>
+                <a href="#" class="boton">SERVICIOS</a>
+                <a href="#" class="boton">CONTACTO</a>
+            </div>
+        </header>
+    </main>
+</body>
+</html>
