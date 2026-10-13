@@ -187,9 +187,9 @@ body {
             width: 380px;
             max-width: 100%;
             /* Evita que el contenido desborde las esquinas o bordes del contenedor */
-            overflow: hidden; 
+            /*overflow: hidden; */
         }
-    }
+    }section
         
 }
 
@@ -371,7 +371,7 @@ body {
             width: 380px;
             max-width: 100%;
             /* Evita que el contenido desborde las esquinas o bordes del contenedor */
-            overflow: hidden; 
+            /*overflow: hidden; */
         }
     }
 }
