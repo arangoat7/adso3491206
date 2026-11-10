@@ -184,13 +184,12 @@ body {
             margin-top: 2rem;
             padding: 0.8rem;
             min-height: 200px;
-            width: 380px;
+            width: 420px;
             max-width: 100%;
             /* Evita que el contenido desborde las esquinas o bordes del contenedor */
             /*overflow: hidden; */
         }
-    }section
-        
+    }     
 }
 
     &.emmet {

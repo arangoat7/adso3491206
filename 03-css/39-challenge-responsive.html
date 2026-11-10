@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack on Titan - Legión de Exploración</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: #12243F;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background:
+                linear-gradient(#1F3E7CCC, #294023CC),
+                url('imgs/fondo_legion.jpg') no-repeat center center / cover;
+            pointer-events: none;
+        }
+
+        body {
+            background-image: url('imgs/fondosnk.jpeg');
+            font-family: sans-serif;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+
+            main {
+                background: linear-gradient(#00000073, transparent 40%);
+                border-radius: 12px;
+                padding: 1rem;
+                min-height: 100vh;
+
+                img.logo {
+                    width: 760px;
+                    max-width: 90%;
+                    display: block;
+                    margin: 1rem auto;
+                    filter: drop-shadow(0 0 14px #50C878B3);
+                    animation: latido 4s infinite ease-in-out;
+                }
+
+                section.characters {
+                    margin: 4rem auto;
+                    width: 1440px;
+                    max-width: 100%;
+                    text-align: center;
+
+                    figure.character {
+                        border-radius: 12px;
+                        outline: 4px solid #000000;
+                        height: 260px;
+                        display: inline-block;
+                        vertical-align: top;
+                        overflow: hidden;
+                        padding: 0;
+                        position: relative;
+                        transition: background-size 0.5s ease;
+                        margin: 0 0.5rem 1rem 0.5rem;
+                        width: 330px;
+                        max-width: 90%;
+
+                        &.character01 {
+                            background: url('imgs/hange.jpeg') no-repeat center/cover;
+                        }
+                        &.character02 {
+                            background: url('imgs/armin.jpeg') no-repeat center/cover;
+                        }
+                        &.character03 {
+                            background: url('imgs/erwin.jpeg') no-repeat center/cover;
+                        }
+                        &.character04 {
+                            background: url('imgs/levi.jpeg') no-repeat center/cover;
+                        }
+                        &:hover {
+                            background-size: 110%;
+
+                            figcaption {
+                                color: #FFF353;
+                                bottom: 0;
+                            }
+                        }
+                        figcaption {
+                            background-color: #000000BB;
+                            color: #FFFFFF;
+                            font-size: 1.4rem;
+                            border-top: 4px solid #000000;
+                            position: absolute;
+                            bottom: -3rem;
+                            left: 0;
+                            margin: 0;
+                            backdrop-filter: blur(4px);
+                            padding: 1rem 1rem 4rem 1rem;
+                            transition: bottom 0.4s 0.2s ease-out, color 0.4s ease;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                section.main-characters {
+                    article {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 2rem;
+                        outline: 4px solid #000000;
+                        background: #0F2A4AB3;
+                        border-radius: 12px;
+                        color: #FFFFFF;
+                        padding: 1rem;
+                        margin: 2rem auto;
+                        width: 1388px;
+                        max-width: 95%;
+                        transition: background-color 0.4s ease;
+
+                        img {
+                            flex-shrink: 0;
+                            filter: drop-shadow(0 0 8px #FFF353);
+                            object-fit: cover;
+                            height: 340px;
+                            width: 340px;
+                            border-radius: 8px;
+                        }
+                        aside {
+                            flex: 1;
+                            min-width: 0;
+
+                            h2 {
+                                color: #FFF353;
+                                margin-top: 0;
+                            }
+                            p {
+                                text-align: justify;
+                                line-height: 2rem;
+                            }
+                        }
+                        &:hover {
+                            background-color: #2B3D2ED9;
+                            backdrop-filter: blur(4px);
+                        }
+                    }
+                }
+            }
+        }
+
+        @keyframes latido {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.12);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            body main img.logo {
+                animation: none;
+            }
+        }
+
+        @media (max-width: 1470px) {
+            body main {
+                img.logo {
+                    width: 620px;
+                }
+                section.characters {
+                    width: 718px;
+                    figure.character {
+                        margin-bottom: 1rem;
+                    }
+                }
+                section.main-characters article {
+                    width: 670px;
+                    gap: 1rem;
+                    padding: 0.75rem;
+
+                    img {
+                        width: 180px;
+                        height: 180px;
+                    }
+                    aside {
+                        h2 {
+                            font-size: 1.3rem;
+                            margin-bottom: 0.5rem;
+                        }
+                        p {
+                            font-size: 0.9rem;
+                            line-height: 1.4rem;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 746px) {
+            body main {
+                img.logo {
+                    width: 460px;
+                }
+                section.characters {
+                    width: 100%;
+                    figure.character {
+                        width: 90%;
+                        margin: 0.5rem auto;
+                        display: block;
+                    }
+                }
+                section.main-characters article {
+                    flex-direction: column;
+                    align-items: center;
+                    width: 90%;
+                    gap: 1rem;
+                    padding: 1rem;
+
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+                    aside {
+                        width: 100%;
+                        flex: none;
+
+                        h2 {
+                            font-size: 1.5rem;
+                            text-align: center;
+                        }
+                        p {
+                            font-size: 1rem;
+                            line-height: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img class="logo" src="imgs/logosnk.png" alt="Attack on Titan Logo">
+
+        <section class="characters">
+            <figure class="character character01">
+                <figcaption>Hange Zoë</figcaption>
+            </figure>
+            <figure class="character character02">
+                <figcaption>Armin Arlert</figcaption>
+            </figure>
+            <figure class="character character03">
+                <figcaption>Erwin Smith</figcaption>
+            </figure>
+            <figure class="character character04">
+                <figcaption>Levi Ackerman</figcaption>
+            </figure>
+        </section>
+
+        <section class="main-characters">
+            <article>
+                <img src="imgs/mikasa.jpeg" alt="Mikasa Ackerman">
+                <aside>
+                    <h2>Mikasa Ackerman</h2>
+                    <p>Hermana adoptiva y protectora leal de Eren Jaeger. Es una de las soldados más formidables de la humanidad, poseedora de habilidades extraordinarias gracias al despertar de su sangre Ackerman, destacándose tanto en combate cuerpo a cuerpo como en el manejo del equipo de maniobras tridimensionales.</p>
+                </aside>
+            </article>
+            <article>
+                <img src="imgs/eren.jpeg" alt="Eren Jaeger">
+                <aside>
+                    <h2>Eren Jaeger</h2>
+                    <p>El protagonista principal de la historia. Movido por un profundo deseo de venganza contra los titanes tras la destrucción de su hogar en el Distrito Shiganshina, se une a la Legión de Exploración para descubrir la verdad del mundo exterior y luchar por la libertad de la humanidad.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
